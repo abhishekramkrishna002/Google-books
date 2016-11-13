@@ -1,0 +1,271 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('/assets/fonts/Lobster/Lobster-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Catamaran';
+    src: url('/assets/fonts/Catamaran/Catamaran-Light.ttf');
+}
+@font-face {
+    font-family: 'Catamaran_bold';
+    src: url('/assets/fonts/Catamaran/Catamaran-Bold.ttf');
+}
+
+
+body,div,h1,h2,h3,p
+{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Catamaran', sans-serif;  
+}
+
+
+body
+{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+.google_books
+{
+    margin: 0;
+    padding:0;
+    width: 100%
+}
+
+.header
+{
+    background-color: #2E4057;
+    margin: 0;
+    padding:1em 1em;
+    color:#F6D8AE;
+}
+.heading_name
+{
+    color:#fff;
+
+}
+.heading_name > .name
+{
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive; 
+}
+.heading_name > .sub_name
+{
+    font-size: 0.6em;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.main_line
+{
+    font-size: 1.5em;
+    margin: 0.5em;
+    font-family: 'Catamaran', sans-serif; 
+    color:#6B818C;
+}
+.main_line a
+{
+    text-decoration: none;
+    color:#F1BF98;
+}
+.search
+{
+    height: 40px;
+    border: 2px solid #D0D0D0 ;
+    border-radius: 30px;  
+    margin: 1em
+}
+.search > input{
+    width:70%;
+    height: 30px;
+    border: 0px solid transparent ;
+    font-family: 'Catamaran', sans-serif;
+
+}
+
+.search > i
+{
+    color: #D0D0D0;
+    margin:  0.7em 0.3em 0.7em 1.5em;
+}
+.search > input
+{
+    color:#D0D0D0;
+    font-size: 1.2em;
+}
+.search > input:focus {
+    outline-color: transparent;
+    outline-style: none;
+    font-size: 1.2em;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.search > input::-webkit-input-placeholder { color:#D0D0D0;font-family: 'Catamaran', sans-serif; }
+.search > input::-moz-placeholder { color:#D0D0D0;font-family: 'Catamaran', sans-serif; } /* firefox 19+ */
+.search > input:-ms-input-placeholder { color:#D0D0D0;font-family: 'Catamaran', sans-serif; } /* ie */
+.search > input:-moz-placeholder { color:#D0D0D0;font-family: 'Catamaran', sans-serif; }
+
+&:focus {
+    outline: none;
+}
+
+.google_book_list
+{
+    list-style-type: none;
+    padding: auto;
+    margin: auto;
+    overflow: hidden;
+}
+.google_book
+{
+    max-height:435px;
+    min-height: 435px;
+height: 435px;
+    overflow-y: scroll;
+    width:40%;
+    display: inline-block;
+/*    float: left;*/
+    margin: 0em 1em 1em 1em;
+/*    overflow: hidden;*/
+    border: 1px solid #D3D3D3;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.google_book_image
+{
+    width: 40%;
+    float:left;
+}
+.google_book_info
+{
+    width: 100%;
+    overflow: hidden;
+}
+.google_book_desc
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%; 
+/*    max-height: 100px;
+    overflow-y: scroll;*/
+}
+
+.left_sec
+{
+    width: 60%; 
+    float:left;
+}
+.google_book_title_sub_title
+{
+    font-family: 'Catamaran', sans-serif; 
+    font-size: 1.5em;
+    font-weight: bold; 
+
+}
+.google_book_title_sub_title > a
+{
+    text-decoration: none;
+    color:#000;    
+}
+.google_book_title
+{
+    margin-right: 0.1em;
+}
+.google_book_sub_title
+{
+    margin-left: 0.1em;
+}
+
+.google_book_category
+{
+    font-family: 'Catamaran', sans-serif;
+    font-size: 0.8em;
+    margin-right: 1em;
+    color:#878787;
+}
+
+
+
+.google_book_authors
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0em 0em 0em 0em;
+}
+
+
+
+.google_book_author
+{
+    margin-left: 0.5em;
+}
+.google_book_authors > li
+{
+    margin-right: 0.3em;
+    display: inline-block;
+}
+
+.google_book_rating
+{
+    padding: 0.2em;
+    background-color: #66D7D1;
+    color:white;
+    margin: 0.5em 0.2em 0.5em 0em;
+    display: inline-block;
+    border-radius: 3px;  
+}
+.google_book_rating >i
+{
+    margin-right: 0.4em;
+}
+.google_book_count
+{
+    padding: 0.2em;
+    background-color: #66D7D1;
+    color:white;
+    margin: 0.5em 0.2em 0.5em 0em;
+    display: inline-block;
+    border-radius: 3px;   
+}
+.google_book_count >i
+{
+    margin-right: 0.4em;
+}
+
+.google_book_cost
+{
+    font-family: 'Catamaran_bold', sans-serif;  
+    font-size: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+}
+.google_book_isbn
+{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+.google_book_isbn li
+{
+    margin: 0.4em 0.5em 0em 0em;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 0.2em;
+    font-family: 'Catamaran', sans-serif;  
+
+}
+
+.google_book_image
+{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.google_book_image > img
+{
+
+}

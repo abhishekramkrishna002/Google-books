@@ -1,0 +1,55 @@
+<div class="google_books">
+    <div class="header">
+        <h2 class="heading_name"><span class="name">Google Books</span><sub class="sub_name">Angular2 project</sub></h2>
+    </div>
+    <p class="main_line">
+        This is an <a href="#">angular 2</a> based demo project.The <a href='#'>project</a> was developed to showcase the skills of angular 2.In this demo  Project we have consumed the <a href='#'>Google Books Api</a>.Hope you like it ! 
+    </p>
+    <div class="search">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input [(ngModel)]="bookName" (keyup)="search($event)" type="text" placeholder="Search Book from Google..."/>
+    </div>
+    
+    
+    <div *ngIf="!dirtyBit">
+        <h3 style="margin: 1em">Results returned: {{totalRecords}}</h3>
+        <ul class="google_book_list" #google_book_list>
+            <li class="google_book" *ngFor="let book of books">
+                <div class="google_book_info">
+                    <div class="left_sec">
+                        <p>
+                            <span class="google_book_category" *ngFor="let category of book.categories">{{category}}</span>
+                        </p>
+                        <p class="google_book_title_sub_title">
+                            <a href="{{book.previewLink}}">
+                                <span class="google_book_title">{{book.title}}</span>:
+                                <span class="google_book_sub_title">{{book.subTitle}}</span></a>
+                        </p>
+
+                        <ul class="google_book_authors">
+                            <li *ngFor="let author of book.authors"><i class="fa fa-pencil" aria-hidden="true"></i><span class="google_book_author">{{author}}</span></li>
+                            </ul>
+                        <p>
+                            <span class="google_book_rating"><i class="fa fa-star" aria-hidden="true"></i>{{book.rating}}</span>
+                            <span class="google_book_count"><i class="fa fa-book" aria-hidden="true"></i>{{book.pageCount}}</span>
+                        </p>
+                        <ul class="google_book_isbn">
+                            <li *ngFor="let isb of book.isbn">
+                                {{isb.type}} : {{isb.identifier}}
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="google_book_image">
+                        <img src="{{book.image}}" alt="book image"/>
+                    </div>
+                </div>
+                <div class="google_book_desc">
+                    <p>{{book.description}}</p>
+                </div>
+            </li>
+            
+            
+        </ul>
+    </div>
+</div>
